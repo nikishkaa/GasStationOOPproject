@@ -5,6 +5,7 @@ import by.itstep.goutor.oopproject.gasstation.model.entity.Car;
 import by.itstep.goutor.oopproject.gasstation.model.entity.Plane;
 import by.itstep.goutor.oopproject.gasstation.model.entity.Transport;
 import by.itstep.goutor.oopproject.gasstation.model.logic.GasManager;
+import by.itstep.goutor.oopproject.gasstation.util.ui.GasStationUI;
 import by.itstep.goutor.oopproject.gasstation.util.view.Printer;
 
 public class Main {
@@ -21,7 +22,9 @@ public class Main {
 
         Transport[] transports = {car1, car2, bus1, bus2, plane1};
 
+        double tank = GasManager.calculateFuel(transports);
 
-        Printer.print(GasManager.calculateFuel(transports));
+
+        Printer.print(GasStationUI.getGasStationUI(tank));
     }
 }

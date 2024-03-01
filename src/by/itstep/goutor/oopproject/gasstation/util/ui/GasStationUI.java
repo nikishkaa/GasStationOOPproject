@@ -9,6 +9,6 @@ public class GasStationUI {
 
     public static StringBuilder getGasStationUI(double tank) {
 
-        return BUILDER.append("Total Gas").append(tank);
+        return BUILDER.append("Total Gas ").append(tank);
     }
 }
