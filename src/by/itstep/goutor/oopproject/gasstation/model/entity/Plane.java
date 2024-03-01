@@ -5,7 +5,7 @@ public class Plane extends Transport {
     private double tank;
     private double capacity;
 
-    public Plane(String brand, double tank, String brand1, double tank1, double capacity) {
+    public Plane(String brand, double tank, double capacity) {
         super(brand, tank);
         this.capacity = capacity;
     }
